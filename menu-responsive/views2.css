@@ -1,0 +1,37 @@
+html, body { margin: 0; padding: 0; box-sizing: border-box; font-family: Helvetica; width: 100%; height: 100vh; }
+
+ul { list-style: none; }
+
+a { text-decoration: none; }
+
+a ion-icon { position: relative; font-size: 20px; opacity: 0.6; }
+
+.text-stroke { color: #000000; font-weight: 600; font-size: 3.125rem; position: relative; }
+
+.text-stroke::before { position: absolute; content: attr(data-text); width: 0%; height: 100%; color: #fff; overflow: hidden; transition: 1; }
+
+.text-stroke:hover::before { width: 100%; -webkit-text-stroke: .0625rem #000; }
+
+.text-stroke:hover::after { color: #fff; width: 0%; }
+
+.wrapper .hero-section { width: 100%; height: 100vh; }
+.wrapper .hero-section h1 { position: absolute; top: 45%; left: 50%; transform: -50%, -50%; font-weight: lighter; text-align: center; }
+.wrapper .hero-section .menu-btn { position: fixed; margin: 1em; font-size: 24px; }
+.wrapper .menu { position: absolute; top: 0; width: 100%; height: 100vh; background: #fff; opacity: 0; }
+.wrapper .menu .close-menu { position: fixed; font-size: 24px; margin: 1em; color: #fff; z-index: 1; }
+.wrapper .menu .nav { position: absolute; left: 21%; margin-top: 8%; }
+.wrapper .menu .nav .main-menu .main-menu-item { padding-top: 30px; }
+.wrapper .menu .nav .main-menu .main-menu-item .submenu { display: none; }
+.wrapper .menu .nav .main-menu .main-menu-item .submenu li { margin: 20px 0; }
+.wrapper .menu .nav .main-menu .main-menu-item .submenu li a { font-size: 1.125rem; font-weight: 600; color: #000000; }
+.wrapper .menu .nav .main-menu .main-menu-item .submenu li a:not(:hover) { opacity: .2; }
+.wrapper .menu .contact { color: #000000; position: absolute; bottom: 70px; right: 24%; }
+.wrapper .menu .contact p { font-weight: lighter; color: grey; }
+.wrapper .menu .media { position: absolute; bottom: 70px; left: 22%; }
+.wrapper .menu .media li { display: inline-block; color: 000000; font-weight: lighter; padding-right: 16px; }
+
+@media (max-width: 768px) { h1 { font-size: 20px; }
+  .nav { margin-top: 20%; }
+  .nav .contact { display: none; } }
+
+/*# sourceMappingURL=views2.css.map */
